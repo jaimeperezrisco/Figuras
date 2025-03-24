@@ -1,5 +1,5 @@
 package Figuras;
-
+//TODO
 public class Rectangulo extends Figura2D {
     
     private double lado;

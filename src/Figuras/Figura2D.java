@@ -7,7 +7,7 @@ public abstract class Figura2D extends Figura {
 
     public void mostrarInformacion() {
         //tipo de figura
-        System.out.println("El tipo de figura es + algo");
+        System.out.println("El tipo de figura es " + this.getClass().getName());
         //area
         System.out.println("El area es: " + calcularArea());
         //perimetro

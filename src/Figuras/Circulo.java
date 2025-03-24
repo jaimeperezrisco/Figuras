@@ -18,7 +18,7 @@ public class Circulo extends Figura2D {
     @Override
     public double calcularArea() {
     
-        double resultado = Math.PI * radio * radio;
+        double resultado = Math.PI * Math.pow(radio, 2);
         return resultado;
     }
 
