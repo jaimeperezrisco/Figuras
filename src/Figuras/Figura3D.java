@@ -7,10 +7,10 @@ public abstract class Figura3D extends Figura {
 
     public void mostrarInformacion() {
         // tipo de figura
-        System.out.println("El tipo de figura es " + this.getClass().getName());
+        System.out.println("El tipo de figura es: " + this.getClass().getName());
         // area
-        System.out.println("El area es " + calcularArea());
-        // perimetro
-        System.out.println("El area es " + calcularVolumen());
+        System.out.println("El area es: " + calcularArea());
+        // volumen
+        System.out.println("El volumen es: " + calcularVolumen());
     }
 }

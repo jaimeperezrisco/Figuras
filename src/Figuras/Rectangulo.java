@@ -23,7 +23,7 @@ public class Rectangulo extends Figura2D {
 
     @Override
     public double calcularPerimetro() {
-        double perimetroRectangulo = Math.pow(largo, 2) + Math.pow(ancho, 2);
+        double perimetroRectangulo = 2*(largo + ancho);
         return perimetroRectangulo;
     }
 }
