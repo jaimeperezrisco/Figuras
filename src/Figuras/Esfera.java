@@ -4,12 +4,13 @@ public class Esfera extends Figura3D {
 
     private double radio;
 
-    //Constructor
+    // Constructor
 
     public Esfera(double radio) {
         this.radio = radio;
     }
-    //Métodos
+
+    // Métodos
     @Override
     public double calcularVolumen() {
         double volumen = 4 / 3 * Math.PI * Math.pow(radio, 3);
@@ -21,5 +22,5 @@ public class Esfera extends Figura3D {
         double area = 4 * Math.PI * Math.pow(radio, 2);
         return area;
     }
-    
+
 }

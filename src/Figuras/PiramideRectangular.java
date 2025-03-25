@@ -16,15 +16,22 @@ public class PiramideRectangular extends Figura3D {
 
     // Métodos
     @Override
+
+    // areaPiramide = Area de la base(ab) + Area lateral
+    // https://www.universoformulas.com/matematicas/geometria/area-piramide-rectangular/
+
     public double calcularArea() {
-        double area = a * b + a * Math.sqrt(Math.pow(h, 2) + Math.pow(b, 2) / 4) + b * Math.sqrt(Math.pow(h, 2) + Math.pow(a, 2) / 4);
-        return area;
+        double areaPiramide = a * b + a * Math.sqrt(Math.pow(h, 2) + Math.pow(b, 2) / 4)
+                + b * Math.sqrt(Math.pow(h, 2) + Math.pow(a, 2) / 4);
+        return areaPiramide;
     }
 
     @Override
     public double calcularVolumen() {
 
-        throw new UnsupportedOperationException("Unimplemented method 'calcularVolumen'");
+        double areaBase = a * b;
+        double volumenPiramide = (areaBase * h) / 3;
+        return volumenPiramide;
     }
 
 }
